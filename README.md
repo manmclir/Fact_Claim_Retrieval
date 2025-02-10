@@ -41,7 +41,7 @@ BM25 is where the baseline results for the BM25s model was generated along with 
 
 The functions follow a similar pattern to how SBERT works in SemProj Flores Raaj where in this case callBM is used to call the BM25s model to generate the embeddings and to rank the similarity scores of the facts and posts. The new function in this note book is the get important range function takes a list of character counts and generates x ranges for each bin. afterwards a csv file is created that contains the post id for all of the posts that belong to the new bin. The undefined function is reused in get lang and get source which extracts the language/source for each posts and saves a csv file with the post ids split based on one of the given categories. 
 
-Visualize contains the code that visualized the results of the different categories. Given a list of the post ids seperated by category defined in the testing BM25 notebook. The average success at k is calculated for each category and the plt bar chart is used to visualize the results.
+Visualize contains the code that visualized the results of the different categories. Given a list of the post ids seperated by category defined in the testing BM25 notebook the average success at k is calculated for each category and plt bar chart is used to visualize the results.
 
 
 
